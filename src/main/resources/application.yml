@@ -1,0 +1,4 @@
+mglbox:
+  config:
+    app-id: joe
+    app-secret: riot

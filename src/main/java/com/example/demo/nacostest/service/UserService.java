@@ -7,8 +7,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 
-import javax.jws.Oneway;
-
 /**
  * @author xiangzhang
  * @since 2022-02-10 12:19

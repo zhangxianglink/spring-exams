@@ -1,6 +1,10 @@
 package com.example.demo.nacostest.controller;
 
 import com.example.demo.nacostest.beans.User;
+import com.example.demo.nacostest.properties.BlackListConfig;
+import com.example.demo.nacostest.properties.YmlDemo;
+import com.example.demo.nacostest.properties.bind.YmlDemo3;
+import com.example.demo.nacostest.properties.scan.YmlDemo2;
 import com.example.demo.nacostest.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,6 +30,27 @@ public class UserController {
         user.setName("jack");
         userService.showUser(user);
         return "ok";
+    }
+
+    @Autowired
+    YmlDemo ymlDemo;
+
+    @Autowired
+    YmlDemo2 ymlDemo2;
+
+
+    @Autowired
+    YmlDemo3 ymlDemo3;
+
+    @Autowired
+    BlackListConfig blackListConfig;
+
+    @GetMapping("/properties")
+    public void properties(){
+        System.out.println(ymlDemo.toString());
+        System.out.println(ymlDemo2.toString());
+        System.out.println(ymlDemo3.toString());
+        System.out.println(blackListConfig.toString());
     }
 
 }

@@ -11,3 +11,5 @@
 >          多个程序排序使用  @Order 
 >          执行顺序：ApplicationRunner  CommandLineRunnerExample 
 >          源码：SpringApplication:callRunners()
+> 
+> 3. 多种方式读取配置信息
