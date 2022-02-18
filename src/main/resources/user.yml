@@ -1,0 +1,13 @@
+user:
+  username: jack
+  is-admin: true
+  reg-time: 2022/02/18
+  is-online: 1
+  lists:
+    - l1
+    - l2
+    - l3
+  maps: { k1 : v2 }
+  address:
+    tel: 1111111111111111
+    city: shanghai

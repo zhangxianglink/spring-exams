@@ -12,4 +12,4 @@
 >          执行顺序：ApplicationRunner  CommandLineRunnerExample 
 >          源码：SpringApplication:callRunners()
 > 
-> 3. 多种方式读取配置信息
+> 3. 多种方式读取配置信息, CommonPropertyResourceFactory 支持yml [参考文章](https://www.cnblogs.com/mzq123/p/11936075.html)

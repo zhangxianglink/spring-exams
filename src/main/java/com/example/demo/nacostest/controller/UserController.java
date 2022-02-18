@@ -5,6 +5,7 @@ import com.example.demo.nacostest.properties.BlackListConfig;
 import com.example.demo.nacostest.properties.YmlDemo;
 import com.example.demo.nacostest.properties.bind.YmlDemo3;
 import com.example.demo.nacostest.properties.scan.YmlDemo2;
+import com.example.demo.nacostest.properties.yml.UserYml;
 import com.example.demo.nacostest.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -45,12 +46,16 @@ public class UserController {
     @Autowired
     BlackListConfig blackListConfig;
 
+    @Autowired
+    UserYml userYml;
+
     @GetMapping("/properties")
     public void properties(){
         System.out.println(ymlDemo.toString());
         System.out.println(ymlDemo2.toString());
         System.out.println(ymlDemo3.toString());
         System.out.println(blackListConfig.toString());
+        System.out.println(userYml.toString());
     }
 
 }

@@ -4,6 +4,7 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.io.support.DefaultPropertySourceFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,11 +14,11 @@ import java.util.List;
  * @since 2021-05-24 11:55
  */
 @Configuration
-@PropertySource("classpath:black.properties")
+@PropertySource(value = "classpath:black.properties", factory = DefaultPropertySourceFactory.class )
 @ConfigurationProperties(prefix = "black")
 @Data
 public class BlackListConfig {
 
-    private List<String> list = new ArrayList<>();
+    private List<String> list;
 
 }
